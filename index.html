@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+
+    <title>InsureAI</title>
+
+
+    <!-- Animate -->
+
+    <link rel="stylesheet" href="src/output.css">
+
+
+
+
+    <style>
+        body {
+            overflow-x: hidden;
+        }
+
+        a {}
+
+        a:hover {
+            color: #5C6E58;
+        }
+
+
+
+        .dark-c {
+            color: #5C6E58;
+        }
+
+        .dark-bg {
+            background-color: #5C6E58;
+        }
+
+        .dark-border {
+            border-color: #5C6E58;
+        }
+
+        .head1 {
+
+position: relative;
+text-decoration: none;
+}
+
+.head1::before {
+content: '';
+position: absolute;
+width: 100%;
+height: 6px;
+border-radius: 4px;
+background-color: black;
+bottom: 0;
+left: 0;
+transform-origin: right;
+transform: scaleX(0);
+transition: transform .3s ease-in-out;
+}
+
+.head1:hover::before {
+transform-origin: left;
+transform: scaleX(1);
+}
+
+.typewriter {
+
+color: black;
+
+
+overflow: hidden; /* Ensures the content is not revealed until the animation */
+border-right: .15em solid orange; /* The typwriter cursor */
+white-space: nowrap; /* Keeps the content on a single line */
+margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+ /* Adjust as needed */
+animation: 
+  typing 10s steps(30, end) infinite,
+  blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+0% { width: 0 }
+20%{ width: 0 }
+50% { width: 60% }
+70%{ width: 60% }
+100% { width: 0 }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: orange }
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Header Area wrapper Starts -->
+    <header>
+        <!-- Navbar Start -->
+        <div class="navigation fixed w-screen z-30 overflow-hidden">
+            <div class=" bg-yellow-300">
+                <nav class=" py-2 flex justify-evenly items-center relative ">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="assets/img/logo.svg" alt="Logo">
+                    </a>
+
+
+                    <div class="flex justify-evenly gap-10">
+                        <a href="#home" class="page-scroll text-lg">Home</a>
+                        <a href="#services" class="page-scroll text-lg">Services</a>
+                        <a href="#about" class="page-scroll text-lg">About Us</a>
+                        <a href="#team" class="page-scroll text-lg">Our Team</a>
+                        <a href="#contact" class="page-scroll text-lg">Contact Us</a>
+                    </div>
+
+
+                    <div class="">
+                        <a class=" border-2 dark-border px-10 font-bold py-3 rounded-full duration-300 hover:bg-black hover:text-yellow-300"
+                            href="#feature">Sign Up</a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+    </header>
+    <!-- Header Area wrapper End -->
+
+    <!-- Hero Area Start -->
+    <section id="home" class=" pt-48 pb-10">
+        <div class=" w-screen">
+            <div class="flex justify-between">
+                <div class="w-full text-center">
+                    <h2 class="text-5xl font-bold typewriter py-4">
+                        Do you really need health insurance?
+                        
+                    </h2>
+                    <h2 class="text-4xl pb-10 font-bold">
+                         Let's find out!
+                    </h2>
+                    <div class="text-center mb-10 wow fadeInUp" data-wow-delay="1.2s">
+                        <button class="border-2 border-black p-3 rounded-3xl font-bold hover:bg-yellow-300"><a href="#"
+                                rel="nofollow">Click Here to know</a></button>
+                    </div>
+                    <div class="text-center wow fadeInUp" data-wow-delay="1.6s">
+                        <img class="img-fluid mx-auto" src="assets/health.avif" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Area End -->
+
+    <!-- Services Section Start -->
+    <section id="services" class="">
+        <div>
+            <div class="flex justify-center">
+                
+                <div class="mb-12 head1 text-5xl font-bold p-2 " data-wow-delay="0.3s">Our Services</div>
+            </div>
+            <div class="flex mx-32 justify-center gap-16">
+                <div class="my-12 w-3/4">
+                    <img src="assets/check.svg" class="w-16" alt="">
+                    <h1 class="text-2xl font-bold my-5 h-16"> Insurance Needs Assessment</h1>
+                    <h4 class="text-lg text-justify bg-yellow-200 p-4 h-72 rounded-xl"> Offer a personalized assessment to help users determine if they
+                        actually need any health Insurence.</h4>
+                </div>
+
+                <div class="my-12 w-3/4">
+                    <img src="assets/map.svg" class="w-16" alt="">
+                    <h1 class="text-2xl font-bold my-5 h-16"> Lifestyle Improvement Programs</h1>
+                    <h4 class="text-lg text-justify bg-yellow-200 p-4 h-72 rounded-xl"> Offer information and resources for lifestyle modification
+                        programs aimed at improving health and reducing the need for health insurance, including
+                        exercise routines, diet plans, and wellness tips.</h4>
+                </div>
+
+                <div class="my-12 w-3/4">
+                    <img src="assets/health.svg" class="w-16" alt="">
+                    <h1 class="text-2xl font-bold my-5 h-16">Customized Recommendations</h1>
+                    <h4 class="text-lg text-justify bg-yellow-200 p-4 h-72 rounded-xl"> Provide personalized recommendations for health insurance plans
+                        that best suit each user's individual needs</h4>
+                </div>
+
+                <div class="my-12 w-3/4">
+                    <img src="assets/support.svg" class="w-16" alt="">
+                    <h1 class="text-2xl font-bold my-5 h-16">Customer Support</h1>
+                    <h4 class="text-lg text-justify bg-yellow-200 p-4 h-72 rounded-xl"> Highlight your customer support services, including helpline
+                        numbers, live chat support, and FAQs to assist users with any queries or issues related to
+                        health insurance and wellness.</h4>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Services Section End -->
+
+    <!-- about us -->
+    <section id="about" class="py-24  ">
+        <div class="w-screen">
+            <div class="flex justify-center">
+                <div class="mb-12 text-5xl head1 font-bold p-2 wow fadeInDown" data-wow-delay="0.3s">About Us</div>
+
+            </div>
+            <div class="px-40">
+                <ul class="text-3xl font-bold list-disc">
+                    <li >
+                        Why is Health Insurance Important?
+                    </li>
+                    <p class="text-lg dark-c font-normal py-5 text-justify">Health insurance is essential for several reasons. Firstly, it offers financial protection by covering the high costs of medical care, which can otherwise lead to significant financial strain or debt. Secondly, it ensures timely access to quality healthcare services, allowing individuals to receive necessary treatments without delay. Additionally, health insurance promotes preventive care and encourages individuals to prioritize their health and well-being.</p>
+
+                    <li >
+                        How We Can Help
+                    </li>
+                    <p class="text-lg dark-c font-normal py-5 text-justify">At InsureAI, we are committed to helping you navigate the complex world of health insurance and make informed decisions about your healthcare needs. Our team of experts is dedicated to providing personalized assistance and guidance to ensure that you find the right health insurance plan tailored to your unique requirements and budget.
+
+                        We offer comprehensive assessments to evaluate your current health status, lifestyle habits, and financial situation, helping you determine whether obtaining health insurance is the right choice for you at this time. Additionally, we provide valuable resources and support to empower you to adopt a healthy lifestyle and minimize the need for extensive medical care.</p>
+
+                </ul>
+            </div>
+
+</section>
+    <!-- Team Section Start -->
+    <section id="team" class="py-24 text-center">
+        <div class="w-screen">
+            <div class="flex justify-center">
+                <div class="mb-12 text-5xl font-bold head1 wow p-2 fadeInDown" data-wow-delay="0.3s">Our Team</div>
+            </div>
+            <div class="flex m-10 justify-evenly">
+                <!-- Team Item Starts -->
+                <div>
+
+
+                    <img class="w-72" src="assets/img/team/img1.jpg" alt="">
+
+                    <div class="text-center px-5 py-3">
+                        <h3 class="text-2xl font-semibold">Akshat Bisht</h3>
+                        <p>UX UI Designer</p>
+                    </div>
+
+                </div>
+                <div>
+
+
+                    <img class="w-72" src="assets/img/team/img1.jpg" alt="">
+
+                    <div class="text-center px-5 py-3">
+                        <h3 class="text-2xl font-semibold">Sahil Semwal</h3>
+                        <p>Front-End Developer</p>
+                    </div>
+
+                </div>
+                <div>
+
+
+                    <img class="w-72" src="assets/img/team/img1.jpg" alt="">
+
+                    <div class="text-center px-5 py-3">
+                        <h3 class="text-2xl font-semibold">Raushan Kumar</h3>
+                        <p>Back-End Developer</p>
+                    </div>
+
+                </div>
+                <div>
+
+
+                    <img class="w-72" src="assets/img/team/img1.jpg" alt="">
+
+                    <div class="text-center px-5 py-3">
+                        <h3 class="text-2xl font-semibold">Ritik</h3>
+                        <p>Data Scientist</p>
+                    </div>
+
+                </div>
+                <!-- Team Item Ends -->
+
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- Team Section End -->
+
+
+    <!-- form contact -->
+    <div id="contact" class="px-32 py-16">
+        <div class="flex justify-center">
+        <div class="text-5xl font-bold text-center p-2 head1">Contact US</div>
+    </div>
+        <form action=" " class="text-lg font-semibold my-16 w-screen"></form>
+        <div class="flex flex-col items-center gap-6 justify-center ">
+
+
+            <div class="flex justify-center gap-10">
+                <div class="">
+                    <input type="text" name="Name" placeholder="Enter Your Name"
+                        class="p-3 border-2 rounded-full border-black">
+                </div>
+                <div>
+                    <input type="email" name="email" placeholder="Enter Your Email"
+                        class="p-3 border-2 rounded-full border-black">
+                </div>
+
+            </div>
+            <div class="">
+                <input class="p-3 w-96 h-60 border-2 rounded-3xl  border-black" type="text" name="comment"
+                    placeholder="comment Here*">
+            </div>
+
+            <div>
+                <button class="py-3 px-10 hover:bg-yellow-300 rounded-full border-2 border-black font-bold">
+                    Submit Response
+                </button>
+            </div>
+
+
+        </div>
+      
+        </form>
+
+    </div>
+
+
+
+
+
+    <section class="dark-bg py-6 border-t-2">
+
+        <div class="flex flex-wrap">
+            <div class="w-full text-center">
+                <p class="text-white">InsureAI | &copy; 2024 | All rights reserved
+
+            </div>
+
+    </section>
+
+    <!-- Go to Top Link -->
+    <a href="#"
+        class="back-to-top w-10 h-10 fixed bottom-0 right-0 mb-5 mr-5 flex items-center justify-center rounded-full bg-yellow-300 text-white text-lg z-20 duration-300">
+        <i class="lni lni-arrow-up"></i>
+    </a>
+
+
+    <!-- All js Here -->
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/tiny-slider.js"></script>
+    <script src="assets/js/contact-form.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
